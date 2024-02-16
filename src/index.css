@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@500&family=Poppins:wght@100;300;400;500;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-/* * {
-  font-family: 'Poppins', sans-serif;
+.custom-container {
+  transition: opacity 1s ease-in-out;
+}
+.custom-container:hover .custom-child {
+  transition: opacity 0.1s ease-in-out;
+  opacity: 0.5;
 }
 
-h1 {
-  font-family: 'Bai Jamjuree', sans-serif;
-} */
-
+.custom-container .custom-child:hover {
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
+}

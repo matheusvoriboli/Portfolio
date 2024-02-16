@@ -23,7 +23,7 @@ export function Header() {
         {routes.map(route => (
           <li key={route.path}>
             <NavLink to={route.path} className={({isActive}) => isActive ? "bg-neutral-800 text-neutral-200 px-3 py-2 rounded-md" : "px-3 py-2 text-neutral-200" }>
-              <a>{route.element}</a>
+              <span>{route.element}</span>
             </NavLink>
           </li>
         ))}

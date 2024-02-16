@@ -5,23 +5,36 @@ import {
   LinkedinLogo,
   TwitterLogo,
 } from "@phosphor-icons/react";
-import "./index.css";
-import { CompanyBox } from "../../components/CompanyBox";
-import { Job } from "../../types/Job";
+import { Tool } from "../../types/Tools";
+import { ToolBox } from "../../components/ToolBox";
+import React from '../../assets/react.svg';
+import Typescript from '../../assets/typescript.svg';
+import Node from '../../assets/Node.svg';
+import Vue from '../../assets/Vue.svg';
+import Postgresql from '../../assets/Postgresql.svg';
 
-const jobs: Job[] = [
+const tools: Tool[] = [
   {
-    name: "GL Homes",
-    projects: [
-      "I've created functional prototypes with ReactJS for testing flows and new components before integration.",
-      "I developed a Design System using HTML, Vanilla JavaScript, CSS, SCSS, and Bootstrap. The system includes a component library styled by the company's UX team, enhancing the process of creating new features and ensuring style standardization.",
-      "Built a demo showcasing all components and enabling interactions using Blazor.",
-    ],
-    website: "https://glhomes.com",
-    period: "2021 - Present",
-    location: "Florida, USA"
+    name: 'Typescript',
+    icon: Typescript,
   },
-];
+  {
+    name: 'React',
+    icon: React,
+  },
+  {
+    name: 'Vue',
+    icon: Vue,
+  },
+  {
+    name: 'Node',
+    icon: Node,
+  },
+  {
+    name: 'Postgresql',
+    icon: Postgresql,
+  },
+]
 
 export function About() {
   return (
@@ -30,7 +43,9 @@ export function About() {
       <div className="flex flex-col gap-3 md:gap-0 md:grid md:grid-cols-[140px,1fr]">
         <h3 className="font-medium text-neutral-200 ">About</h3>
         <div className="flex flex-col gap-3 ">
-          <span className=" text-neutral-400">Hey guys, I am Matheus Riboli.</span>
+          <span className=" text-neutral-400">
+            Hey guys, I am Matheus Riboli.
+          </span>
           <span className="text-neutral-400">
             I&apos;m a 26-year-old Software Engineer from Brazil. My childhood
             dream was always to become a Software Developer, inspired by my dad
@@ -51,7 +66,7 @@ export function About() {
       </div>
       <div className="flex flex-col gap-3 md:gap-0 md:grid md:grid-cols-[140px,1fr]">
         <h3 className="font-medium text-neutral-200">Contact Me</h3>
-        <div className="contact-box-container flex flex-col gap-3 md:flex-wrap md:flex-row">
+        <div className="custom-container flex flex-col gap-3 md:flex-wrap md:flex-row">
           <ContactBox
             icon={<Envelope size={21} className="text-neutral-200" />}
             text="Email"
@@ -71,22 +86,18 @@ export function About() {
         </div>
       </div>
       <div className="flex flex-col gap-3 md:gap-0 md:grid md:grid-cols-[140px,1fr]">
-        <h3 className="font-medium text-neutral-200">Experience</h3>
-        <div className="flex flex-col gap-3">
-          <span className="text-neutral-400">
-            I'm a frontend Developer with 5+ years of experience, specializing
-            in crafting intuitive user interfaces. I leverage the latest
-            technologies to deliver high-quality solutions that meet user needs
-            and business objectives.
+        <h3 className="font-medium text-neutral-200">Main Stack</h3>
+        <div className="space-y-5">
+          <span>
+            Throughout my journey as a frontend developer, I've gained experience
+            with various programming languages, frameworks, tools, and libraries.
+            Below, I'm highlighting the technologies I'm most experienced with and
+            enjoy working with.
           </span>
-          <span className="text-neutral-400">
-            Currently, I'm working at GL Homes, and below are some companies
-            I've worked with:
-          </span>
-          <div className="space-y-3">
-            {jobs.map((job) => (
-              <CompanyBox {...job} />
-            ))}
+          <div className="custom-container flex flex-wrap justify-center md:justify-start gap-4">
+            {tools.map((tool, index) => (
+              <ToolBox {...tool} key={index} />
+            ))} 
           </div>
         </div>
       </div>
