@@ -7,10 +7,10 @@ type ContactBoxProps = {
 
 export function ContactBox({ text, icon }: ContactBoxProps) {
   return (
-    <div className='contact-box flex border-solid border-soft-dark border-[1px] rounded w-full p-3 items-center gap-2 justify-center cursor-pointer sm:w-1/3'>
+    <div className='contact-box flex border-solid border-neutral-600 border-[1px] rounded w-full p-3 items-center gap-2 justify-center cursor-pointer sm:w-1/3'>
       {icon}
-      <h1 className='text-light'>{text}</h1>
-      <ArrowUpRight size={21} className='ml-auto text-light' />
+      <h1 className='text-neutral-300'>{text}</h1>
+      <ArrowUpRight size={21} className='ml-auto text-neutral-300' />
     </div>
   )
 }

@@ -4,20 +4,11 @@
 @tailwind utilities;
 
 
-* {
+/* * {
   font-family: 'Poppins', sans-serif;
-}
-
-html {
-  background-color: #111;
-}
-
-#root {
-  min-height: 100vh;
-  height: 100%;
 }
 
 h1 {
   font-family: 'Bai Jamjuree', sans-serif;
-}
+} */
 

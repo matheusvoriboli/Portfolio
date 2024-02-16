@@ -22,7 +22,7 @@ export function Header() {
       <ul className="flex justify-center gap-5">
         {routes.map(route => (
           <li key={route.path}>
-            <NavLink to={route.path} className={({isActive}) => isActive ? "bg-soft-dark text-light px-3 py-2 rounded-md font-poppins font-light" : "px-3 py-2" }>
+            <NavLink to={route.path} className={({isActive}) => isActive ? "bg-neutral-600 text-neutral-200 px-3 py-2 rounded-md font-poppins" : "px-3 py-2 text-neutral-200" }>
               <a>{route.element}</a>
             </NavLink>
           </li>

@@ -1,5 +1,5 @@
 export function Projects() {
   return (
-    <h1 className='text-2xl'>Take a look in my projects</h1>
+    <h1 className='font-title text-2xl text-neutral-200'>Take a look in my projects</h1>
   )
 }
