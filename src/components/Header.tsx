@@ -5,7 +5,7 @@ export function Header() {
   const routes = [
     {
       path: "/",
-      element: "Home"
+      element: "About"
     },
     {
       path: "/career",
@@ -18,11 +18,11 @@ export function Header() {
   ]
   return (
     <nav className="w-full relative flex items-center justify-center mb-20">
-      <img className="absolute left-5 hidden sm:block" src={Logo} alt="Logo" />
+      <img className="absolute left-5 hidden md:block" src={Logo} alt="Logo" />
       <ul className="flex justify-center gap-5">
         {routes.map(route => (
           <li key={route.path}>
-            <NavLink to={route.path} className={({isActive}) => isActive ? "bg-neutral-600 text-neutral-200 px-3 py-2 rounded-md font-poppins" : "px-3 py-2 text-neutral-200" }>
+            <NavLink to={route.path} className={({isActive}) => isActive ? "bg-neutral-800 text-neutral-200 px-3 py-2 rounded-md" : "px-3 py-2 text-neutral-200" }>
               <a>{route.element}</a>
             </NavLink>
           </li>

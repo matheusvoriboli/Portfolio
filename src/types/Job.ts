@@ -3,4 +3,5 @@ export type Job = {
   projects: string[];
   website: string;
   period: string;
+  location: string;
 }
