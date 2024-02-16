@@ -38,8 +38,8 @@ const tools: Tool[] = [
 
 export function About() {
   return (
-    <div className="flex flex-col gap-7">
-      <h1 className="text-2xl font-title text-neutral-200">Who am i?</h1>
+    <div className="flex flex-col gap-7 animate-fade-in">
+      <h1 className="text-2xl font-title text-neutral-200 ">Who am i?</h1>
       <div className="flex flex-col gap-3 md:gap-0 md:grid md:grid-cols-[140px,1fr]">
         <h3 className="font-medium text-neutral-200 ">About</h3>
         <div className="flex flex-col gap-3 ">

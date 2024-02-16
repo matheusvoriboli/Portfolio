@@ -8,8 +8,8 @@ export function CompanyBox({ name, projects, website, period, location }: Job) {
   // TODO: Create list with all companies and add the hover effect i have in my contacts
 
   return (
-    <div className="flex flex-col gap-5">
-      <div className="flex justify-between items-center">
+    <div onClick={() => setShowProjects((state) => !state)} className="custom-child flex flex-col gap-5 cursor-pointer">
+      <div className="flex justify-between items-center group">
         <div className="flex flex-col">
           <span className="text-neutral-200">{name}</span>
           <span className="text-neutral-400 text-sm">{location}</span>
@@ -17,8 +17,7 @@ export function CompanyBox({ name, projects, website, period, location }: Job) {
         <div className="flex flex-col items-end">
           <span className="text-neutral-400">{period}</span>
           <span
-            onClick={() => setShowProjects((state) => !state)}
-            className="text-neutral-400 hover:text-neutral-200 underline text-sm cursor-pointer"
+            className="text-neutral-200 underline text-sm cursor-pointer"
           >
             {showProjects ? "Hide Details" : "See Details"}
           </span>
@@ -45,8 +44,6 @@ export function CompanyBox({ name, projects, website, period, location }: Job) {
           Visit {name} website
         </a>
       </div>
-      {/* {showProjects && (
-      )} */}
     </div>
   );
 }

@@ -17,7 +17,7 @@ export function Header() {
     }
   ]
   return (
-    <nav className="w-full relative flex items-center justify-center mb-20">
+    <nav className="w-full relative flex items-center justify-center mb-20 animate-fade-in">
       <img className="absolute left-5 hidden md:block" src={Logo} alt="Logo" />
       <ul className="flex justify-center gap-5">
         {routes.map(route => (
