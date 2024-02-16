@@ -70,18 +70,22 @@ export function About() {
           <ContactBox
             icon={<Envelope size={21} className="text-neutral-200" />}
             text="Email"
+            href="mailto:matheusvor@gmail.com"
           />
           <ContactBox
             icon={<GithubLogo size={21} className="text-neutral-200" />}
             text="Github"
+            href="https://github.com/matheusvoriboli"
           />
           <ContactBox
             icon={<LinkedinLogo size={21} className="text-neutral-200" />}
             text="Linkedin"
+            href="https://www.linkedin.com/in/matheusriboli/"
           />
           <ContactBox
             icon={<TwitterLogo size={21} className="text-neutral-200" />}
             text="Twitter"
+            href="https://twitter.com/ribolimatheus"
           />
         </div>
       </div>
