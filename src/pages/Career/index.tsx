@@ -81,7 +81,7 @@ export function Career() {
           worked with:
         </span>
       </div>
-      <div className="custom-container flex flex-col gap-4 w-full">
+      <div className="custom-container flex flex-col gap-5 w-full">
         {jobs.map((job, index) => (
           <CompanyBox {...job} key={index} />
         ))}
