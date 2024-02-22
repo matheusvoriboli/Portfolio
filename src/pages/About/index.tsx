@@ -9,9 +9,9 @@ import { Tool } from "../../types/Tools";
 import { ToolBox } from "../../components/ToolBox";
 import React from '../../assets/react.svg';
 import Typescript from '../../assets/typescript.svg';
-import Node from '../../assets/Node.svg';
-import Vue from '../../assets/Vue.svg';
-import Postgresql from '../../assets/Postgresql.svg';
+import Node from '../../assets/node.svg';
+import Vue from '../../assets/vue.svg';
+import Postgresql from '../../assets/postgresql.svg';
 
 const tools: Tool[] = [
   {
