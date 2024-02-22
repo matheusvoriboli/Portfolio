@@ -78,7 +78,7 @@ export function Career() {
         </span>
         <span className="text-neutral-400">
           Currently, I'm working at GL Homes, and below are some companies I've
-          worked with:
+          worked:
         </span>
       </div>
       <div className="custom-container flex flex-col gap-5 w-full">
