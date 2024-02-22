@@ -30,7 +30,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Set up Node
+      - name: Install pnpm
+        run: npm install -g pnpm
+      - name: Set up Node and pnpm
         uses: actions/setup-node@v3
         with:
           node-version: 18
