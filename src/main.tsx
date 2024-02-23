@@ -7,7 +7,7 @@ import { Header } from "./components/Header.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/Portfolio">
       <Header />
       <App />
     </BrowserRouter>
