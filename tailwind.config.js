@@ -9,7 +9,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Poppins", "sans-serif"],
-        title: "Bai Jamjuree",
+        title: ["Bai Jamjuree", "sans-serif"],
       },
       keyframes: {
         'fade-in': {
