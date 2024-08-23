@@ -19,7 +19,7 @@ const jobs: Job[] = [
      "Development of the new platform for Energisa's clients. In this project, we provided users with functionalities that were previously only accessible in person, such as requesting a new connection. This improved the system's experience and quality."
     ],
     website: "https://peopleinteractive.com.br",
-    period: "May 2022 - Sep 2022",
+    period: "Apr 2022 - Sep 2022",
     location: "Rio De Janeiro, BRA",
   },
   {
@@ -41,7 +41,7 @@ const jobs: Job[] = [
       "Development of a communication platform for service providers and clients, enabling messaging and video calls. This facilitated remote medical consultations and prescription delivery during the pandemic when in-person appointments were not possible."
     ],
     website: "https://www.linkedin.com/company/yoobot-solucoes",
-    period: "Oct 2021 - Apr 2022",
+    period: "Mar 2021 - Oct 2021",
     location: "Itajubá, BRA",
   },
   {
@@ -50,7 +50,7 @@ const jobs: Job[] = [
       "Summer internship where I built an app for autonomous structure monitoring. It alerted in case of alarming data, preventing disasters."
     ],
     website: "https://solvertecnologias.com.br",
-    period: "Jan 2021 - Feb 2021",
+    period: "Jan 2021 - Mar 2021",
     location: "Itajubá, BRA",
   },
   {
